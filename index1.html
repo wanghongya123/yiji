@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+	.body{
+		font-size:10px;
+		font-family:"微软雅黑";
+	}
+		
+		.swiper-container{
+			width: 100%;
+			height: 100%;
+			position:absolute;
+			top:0;
+			bottom:0;
+			font-size: 20px;
+
+
+		}
+		
+		@keyframes animate{
+			0%{margin-left: 100%;}
+			100%{margin-left: 0%;}
+		}
+		.box1{
+			background:url(images/u10-bg.jpg) no-repeat ;
+			background-size:100% 100%;
+			animation:animate 2s;
+
+		}
+		.swiper-pagination-bullet-active{
+			background-color: #313131;
+		}
+		.text{
+			text-align: center;	
+			position:absolute;
+			bottom:10%;
+			left:30%;
+		}
+		.time{
+			line-height:3;
+			font-size:1.4rem;
+
+		}
+		.box1  a{
+			color:#000;
+			font-size:1.2rem;
+			text-decoration: none;
+		}
+			
+
+	</style>
+</head>
+<body>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide box1">
+	        	<div class="text">
+	        		<p class="time"></p>
+	        		<a href="entry.html">今日推送 >></a>
+	        	</div>
+	        </div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <!-- <div class="swiper-pagination"></div> -->
+	</div>
+    <script>
+	//-------------------时间----------------------
+		var myDate = new Date();     
+		function dateToStr(datetime){ 
+			 var year = datetime.getFullYear();
+			 var month = datetime.getMonth()+1;//js从0开始取 
+			 var date = datetime.getDate(); 	
+			 if(month<10){
+			  month = "0" + month;
+			 }
+			 if(date<10){
+			  date = "0" + date;
+			 }
+			 var time = "-"+year+"/"+month+"/"+date+"-"; //2009-06-12 
+			// alert(time);
+			 return time;
+  		}   
+		var t = dateToStr(myDate);
+		console.log(t)
+		var time = document.getElementsByClassName('time')[0];
+			time.innerHTML = t ;
+    </script>
+</body>
+</html>

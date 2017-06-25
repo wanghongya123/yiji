@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home-box1</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px"})()
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<style>
+	.clearfix:before,
+		.clearfix:after {       
+		    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+		    display: block;   /*加入的这个元素转换为块级元素。*/
+		    clear: both;     /*清除左右两边浮动。*/
+		    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+		    line-height: 0;    /*行高为0；*/
+		    height: 0;     /*高度为0；*/
+		    font-size:0;    /*字体大小为0；*/
+		}
+		.clearfix { *zoom:1;}
+		header{
+			width: 100%;
+		
+		}
+		header .top{
+			width: 100%;
+			position: relative;
+			z-index: 10;
+			height:1.8rem;
+			position:fixed;
+			top:0;
+			z-index:10;
+		}
+
+		header .top a{
+			display:block;
+			width: 0.34rem;
+			height: 0.58rem;
+			background:url(images/jiantou_03.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			margin-left: 0.42rem;
+			margin-top: 0.67rem;
+		}
+		.main{
+			margin-bottom:1.8rem;
+
+		}
+		.main-center{
+			transition:all 1s;
+		}
+		.main-center img{
+			width: 10.8rem;/*
+			height: 5.41rem;*/
+			margin-top:0.23rem;
+			
+		}
+		.main-center img:nth-child(1){
+			margin-top: 0;
+		}
+		
+		.main .main-center span{
+			font-size:0.29rem;
+			display:inline-block;
+			width: 2.23rem;
+			height: 0.59rem;
+			background-color:#dd4f43;
+			color:#fff;
+			text-align: center;
+			line-height:0.59rem;
+			border-radius:0rem 50rem  50rem  0rem;
+		}
+		.main  .main-center .main-c-box1{position:relative;} 
+		.main .main-center .s0{
+			position:absolute;
+			top:5.41rem;
+			z-index:10;
+		}
+		.main  .main-center .main-c-box2{position:relative;}
+		.main .main-center .s1{
+			position:absolute;
+			top:0.2rem;
+			z-index:10;
+		}
+		.main  .main-center .main-c-box3{position:relative;} 
+		.main .main-center .s2{
+			position:absolute;
+			top:0.2rem;
+		}
+		.main  .main-center .main-c-box4{position:relative;padding-top:0.6rem;}  
+		.main .main-center .s3{
+			position:absolute;
+			top:0rem;
+		}
+		
+		.main .main-center p{
+			width: 90%;
+			font-size: 0.23rem;
+			color:#3a3a3a;
+			margin: 0 auto;
+			margin-top:0.8rem;
+		}
+		.main .main-center .p2{
+			margin-top:0.2rem;
+		}
+	
+		.main .main-center .box1  {
+			background-color: #dcdcdc;
+			padding:0.5rem 0rem;
+		}
+		.main .main-center .box2{
+			margin-top:0.1rem;
+		}
+		.main .main-center .box3{
+			background-color: #dcdcdc;
+			padding:0.5rem 0rem;
+			text-align: center;
+			margin-top:0.1rem;
+		}
+		.main .main-center .box1 .a-pic{
+			width: 0.74em;
+			height: 0.71em;
+			background:url(images/toxiang_17.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			float: left;
+			margin-left: 0.35rem;
+			margin-right: 0.4rem;
+		}
+		.main .main-center .box1 .right{
+			float: left;
+			width: 50%;
+		}
+		.main .main-center .box1 .right h3{
+			font-size: 0.26rem;
+		}
+		.main .main-center .box1 .right p{
+			margin: 0;
+		}
+		.main .main-center .box1 .right .text{
+			font-size:0.25rem;
+			line-height:1rem;
+		}
+		footer{
+				
+				position:relative;
+			}
+		.footer-center{
+				width: 100%;
+				height: 1.45rem;
+				background-color: #000;
+				position:fixed;
+				bottom:0;
+			}
+		footer .footer-center a{
+			width: 25%;
+			display:block;
+			float: left;
+			font-size:0.25rem;
+			text-decoration: none;
+			color:#fff;
+			text-align: center;
+			line-height:1.45rem;
+		}
+		footer .footer-center a .iconfont{
+			font-size:0.71rem;
+		}
+		footer .footer-center .a1{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="top clearfix">
+			<a href="home.html"></a>
+		</div>
+	</header>
+	<div class="main">
+		<div class="main-center">
+			<div class="main-c-box1">
+				<img src="images/main-m-6_01.jpg" alt="">
+				<span class="s0">展览内容</span>
+				<p>2010 “黑领巾”曾健勇个展，奥画廊，香港
+					2008 “成长”曾健勇个展，Eli Klein Fine Art Gallery，纽约，美国
+					“大队长”曾健勇个展，圣东方艺术机构，上海
+					“大队长”曾健勇个展，Heather James Fine Art，棕榈泉，加州，美国
+					“大队长”曾健勇个展，Rohrer Fine Art，拉古纳，加州，美国
+					2007 “大队长--曾健勇作品展”，798时代空间，北京
+					“曾健勇作品展”，就是SPACE，北京
+				</p>
+			</div>
+			<div class="main-c-box2">
+				<span class="s1">作者介绍</span>
+				<img src="images/box2-tu_02.jpg" alt="">
+				<p class="p2">曾健勇1971年11月生于广东澄海国立华侨大学艺术系中国画专业中央美术学院版画研修班现 工作生活于北京</p>
+			</div>
+			<div class="main-c-box3">
+				<span class="s2">作品展示</span>
+				<img src="images/box2-pic2_04.jpg" alt="">
+				<img src="images/box-pic3_06.jpg" alt="">
+				<img src="images/box2-pic4_08.jpg" alt="">
+			</div>
+			<div class="main-c-box4">
+				<span class="s3">展览评论</span>
+				<div class="box1 clearfix">
+					<div class="a-pic" href="#"></div>
+					<div class="right">
+						<h3>阿德</h3>
+						<p class="time">2017.12.03</p>
+						<p class="text">挺好的，特别喜欢这种风格</p>
+					</div>
+				</div>
+				<div class="box1 box2 clearfix">
+					<div class="a-pic" href="#"></div>
+					<div class="right">
+						<h3>阿德</h3>
+						<p class="time">2017.12.03</p>
+						<p class="text">挺好的，特别喜欢这种风格</p>
+					</div>
+				</div>
+				<div class="box3">
+					<p>查看全部9条评论 V</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<footer>
+		<div class="footer-center">
+			<a href="#"><i class="iconfont icon-favorites"></i> 关注</a>
+			<a href="#"><i class="iconfont icon-daozhequ"></i> 到这</a>
+			<a href="#"><i class="iconfont icon-fenxiang"></i> 分享</a>
+			<a href="#"><i class="iconfont icon-groupcopy5"></i> 评论</a>
+		</div>
+	</footer>
+	<script src="js/hammer.min.js"></script>
+	<script>
+	var maincenter = document.getElementsByClassName('main-center')[0];
+		var hammertime = new Hammer(maincenter);
+		hammertime.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+		var i = 0;
+		hammertime.on("swipeup",function(){
+			if(i<6){
+				i++;
+				maincenter.style.marginTop = -650* i /100 + "rem";
+				console.log(i)
+			}
+		})
+		hammertime.on("swipedown",function(){
+			if(i>0){
+				i--;
+				maincenter.style.marginTop = -650*i/100 + "rem"
+			}
+		})
+		var footercenter = document.getElementsByClassName('footer-center')[0];
+		var footera = footercenter.getElementsByTagName('a')[0];
+		var hammertime1 = new Hammer(footera);
+		hammertime1.on("tap" , function(){
+			footera.style.color="red";
+		})
+	</script>
+</body>
+</html>

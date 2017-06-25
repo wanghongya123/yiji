@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px"})()
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<style>
+	.clearfix:before,
+		.clearfix:after {       
+		    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+		    display: block;   /*加入的这个元素转换为块级元素。*/
+		    clear: both;     /*清除左右两边浮动。*/
+		    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+		    line-height: 0;    /*行高为0；*/
+		    height: 0;     /*高度为0；*/
+		    font-size:0;    /*字体大小为0；*/
+		}
+		.clearfix { *zoom:1;}
+		body{
+			
+			font-family:"微软雅黑"
+		}
+		header{
+			width: 100%;
+			background:url(images/center01_01.jpg) no-repeat;
+				-webkit-background-size: 100%;
+			-o-background-size: 100%;
+			-moz-background-size: 100%;
+			-ms-background-size: 100%;
+			background-size: 100%;
+			text-align: center;
+			padding-bottom:1rem;
+		}
+		header .top{
+			width: 100%;
+			height:1.8rem;
+		
+		}
+		.right{
+			display:block;
+			width: 0.55rem;
+			height: 0.56rem;
+			background:url(images/shwzhi_06.jpg) no-repeat;
+			-webkit-background-size: 100%;
+			-o-background-size: 100%;
+			-moz-background-size: 100%;
+			-ms-background-size: 100%;
+			background-size: 100%;
+			float: right;
+			margin-right:0.7rem;
+			margin-top:1rem;
+		}
+		.toxiang{
+			display:block;
+			width: 2.41rem;
+			height: 2.3rem;
+			border:3px solid rgba(255, 255, 255, 0.4);
+			border-radius:50%;
+			margin: 0 auto;
+			background:url(images/toxiang_17.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
+		header p{
+			font-size:0.48rem;
+			color:#fff;
+			margin-top: 0.58rem;
+		} 
+		header .a{
+			width: 34%;
+			margin: 0 auto;
+			margin-top: 0.58rem;
+		}
+		header .a>a{
+			font-size:0.31rem;
+			color:#fff;
+			text-decoration: none;
+			display:block;
+			float: left;
+			text-align: center;
+			padding:0.2rem;
+		}
+
+		.main{
+			width: 100%;
+			margin:0 auto;
+		}
+		.main .m-top{
+		}
+		.main .m-top h1{
+			font-size:0.4rem;
+			float: left;
+			margin-left:0.5rem;
+		}
+		.main .m-top .all{
+			display:block;
+			float: right;
+			width: 1.88rem;
+			height: 0.59rem;
+			background-color: #dd4f43;
+			border-radius:0.25rem 0rem 0rem 0.25rem;
+			color:#fff;
+			font-size:0.21rem;
+			text-align: center;
+		}
+		.main .box .box1{
+			width: 31%;
+			margin-top:0.31rem;
+			float: left;
+			margin-left:0.16rem;
+
+
+		}
+		.main .box .box1:nth-child(2){
+			margin-left:0.1rem;
+			margin-right: 0.1rem;
+		}
+		.main .box .box1 p{
+			font-size:0.26rem;
+			margin-top: 0.21rem;
+			margin-left:0.46rem;
+		}
+		.main .box .box1 img{
+			width: 100%;
+			box-shadow:2px 2px 2px 1px #ccc;
+		}
+		.main .m-bottom .b-top{
+			width: 100%;
+			height: 0.83rem;
+			background:url(images/center05_16.jpg) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			box-shadow: 1px 1px 1px 1px #ccc
+		}
+		.main .m-bottom .b-bottom{
+			width: 96%;
+			margin: 0 auto;
+			margin-top: 0.2rem;
+		}
+		.main .m-bottom .b-bottom1{
+			width: 49%;
+			float: left;
+		}
+		.main .m-bottom .b-bottom1 img{
+			width: 100%;
+		}
+		.main .m-bottom .b-bottom2{
+			width: 49%;
+			float: left;
+			margin-left:2%;
+		}
+		.main .m-bottom .b-bottom2 img{
+			width: 100%;
+		}
+		footer{
+			
+			position:relative;
+		}
+		.footer-center{
+			width: 100%;
+			height: 1.45rem;
+			background-color: #000;
+			position:fixed;
+			bottom:0;
+		}
+		footer .footer-center a{
+			display:block;
+			float: left;
+			font-size:0.25rem;
+			text-decoration: none;
+			color:#fff;
+			padding:0.05rem 0.945rem;
+			text-align: center;
+		}
+		footer .footer-center a .iconfont{
+			font-size:0.71rem;
+		}
+		footer .footer-center .a1{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="top">
+			<a href="shezhi.html" class="right"></a>
+		</div>
+		<a class="toxiang" href="gerenxinxi.html"></a>
+		<p>阴雨天</p>
+		<div class="a clearfix">
+			<a href="#">关注<br>11</a>
+			<a href="#">发布<br>12</a>
+			<a href="#">访客<br>22</a>
+		</div>
+	</header>
+	<div class="main">
+		<div class="m-top ">
+			<div class="box0 clearfix">
+				<h1>艺象云集</h1>
+				<a class="all">ALL</a>
+			</div>
+			<div class="box clearfix">
+				<div class="box1 ">
+					<a href="p-zhanxun.html"><img src="images/center02_07.jpg" alt=""></a>
+					<p>订阅/11</p>
+				</div>
+				<div class="box1 ">
+					<a href="p-zuopin.html"><img src="images/center04_11.jpg" alt=""></a>
+					<p>订阅/15</p>
+				</div>
+				<div class="box1 ">
+					<a href="#"><img src="images/center03_09.jpg" alt=""></a>
+					<p>订阅/19</p>
+				</div>
+			</div>
+		</div>
+		<div class="m-bottom">
+			<div class="b-top"></div>
+			<div class="b-bottom clearfix">
+				<div class="b-bottom1"><img src="images/center06_19.jpg" alt=""></div>
+				<div class="b-bottom2"><img src="images/center07_21.jpg" alt=""></div>
+			</div>
+		</div>
+		
+	</div>
+	<footer>
+		<div class="footer-center">
+			<a  href="home.html"><i class="iconfont icon-xuanzhong"></i><br>展讯</a>
+			<a href="recom.html"><i class="iconfont icon-tuijian"></i><br>推荐</a>
+			<a href="publish.html"><i class="iconfont icon-fabu"></i><br>发布</a>
+			<a class="a1" href="personal.html"><i class="iconfont icon-account"></i><br>个人</a>
+		</div>
+	</footer>
+</body>
+</html>

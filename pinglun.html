@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px"})()
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<style>
+				.clearfix:before,
+		.clearfix:after {       
+		    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+		    display: block;   /*加入的这个元素转换为块级元素。*/
+		    clear: both;     /*清除左右两边浮动。*/
+		    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+		    line-height: 0;    /*行高为0；*/
+		    height: 0;     /*高度为0；*/
+		    font-size:0;    /*字体大小为0；*/
+		}
+		.clearfix { *zoom:1;}
+		body{
+			font-family:"微软雅黑";
+			overflow:hidden;
+			background:url(images/so-bg.jpg) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
+		header{
+			width: 100%;
+			margin-bottom:0.08rem;
+		}
+		header .top{
+			width: 90%;
+			background-color: #fff;
+			text-align: center;
+			margin: 0 auto;
+			border-bottom:1px solid #666;
+		}
+		header .top .logo{
+				width:75%;
+				height:1.8rem;
+				line-height:1.8rem;
+				float: left;
+				color:#d20003;
+				font-size:0.39rem;
+		}
+		header .top .right{
+				display:block;
+				width: 0.67rem;
+				height: 0.67rem;
+				background:url(images/publish-fj_03.png) no-repeat right;
+				/*background-position: 100% 50%;*/
+				-webkit-background-size:30% 20%;
+				background-size:cover;
+				float: right;
+				margin-right:0.43rem;
+				margin-top: 0.5rem;
+		}
+		header .top .left{
+				display:block;
+				width: 0.67rem;
+				height: 0.67rem;
+				background:url(images/heijiantou_03.png) no-repeat right;
+				/*background-position: 100% 50%;*/
+				-webkit-background-size:30% 20%;
+				background-size:cover;
+				float:left;
+				margin-left:0.43rem;
+				margin-top: 0.5rem;
+		}
+		.main{
+			width: 100%;
+			text-align: center;
+			padding-top:0.5rem;
+		}
+		textarea{
+			width: 90%;
+			height: 6rem;
+			border:0;
+			outline: 0;
+			background:rgba(1,1,1,0);
+			color:#999;
+
+			
+		}
+		.box-pic{
+			
+		}
+		.box-pic .box-t{
+			width: 0.71rem;
+			height: 0.58rem;
+			background:url(images/pulish-pic_17.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			margin: 0 auto;
+
+		}
+		.box-pic>a{
+			text-decoration: none;
+			color:#d20003;
+			font-size: 0.21rem;
+			display:block;
+		}
+		.box-pic1{
+			width: 1.72em;
+			height: 1.56em;
+			background:url(images/publish-xiangji_03.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			margin-left:6%;
+			margin-top:0.35rem;
+			margin-bottom: 0.35rem;
+			float: left;
+		}
+		.box-pic2{
+			width: 1.72em;
+			height: 1.56em;
+			background:url(images/pulish-pic_17.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			margin-left:6%;
+			margin-top:0.35rem;
+			margin-bottom: 0.35rem;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="top clearfix">
+			<a class="left" href="home-box1.html"></a>
+			<p class="logo">上传照片</p>
+			<a class="right" href="#"></a>
+		</div>
+	</header>
+	<div class="main">
+		<textarea name="" id="" cols="30" rows="10" placeholder="">说点什么..
+		</textarea>
+		<div class="box-pic clearfix">
+			<a href="#" class="box-pic1"></a>
+			<a href="#" class="box-pic2"></a>
+		</div>
+		
+	</div>
+</body>
+</html>

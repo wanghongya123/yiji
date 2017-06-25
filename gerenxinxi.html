@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>头像</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px"})()
+	</script>
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<style>
+		.clearfix:before,
+		.clearfix:after {       
+		    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+		    display: block;   /*加入的这个元素转换为块级元素。*/
+		    clear: both;     /*清除左右两边浮动。*/
+		    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+		    line-height: 0;    /*行高为0；*/
+		    height: 0;     /*高度为0；*/
+		    font-size:0;    /*字体大小为0；*/
+		}
+		.clearfix { *zoom:1;}
+		body{
+			font-family:"微软雅黑";
+			background:url(images/shezhi.jpg) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
+		header{
+			width: 100%;
+			box-shadow:0px 0px 5px 0px #ccc;
+
+		}
+		header .top{
+			background-color: #f0f0f2;
+			position: relative;
+			z-index: 10;
+		}
+		header .top .logo{
+				width: 43%;
+				height:1.8rem;
+				background:url(images/home-logo_03.png) no-repeat;
+				background-position: 100% 50%;
+				-webkit-background-size:30% 20%;
+				background-size:30% 20%;
+				float: left;
+
+		}
+		header .top > a{
+				display:block;
+				width: 0.67rem;
+				height: 0.67rem;
+				background:url(images/heijiantou_03.png) no-repeat right;
+				background-size:cover;
+				float:left;
+				margin-right:0.43rem;
+				margin-top: 0.5rem;
+				margin-left:0.51rem;
+		}
+		.main{
+			margin-top:0.41rem;
+			background-color: #f0f0f2;
+			box-shadow:0px 0px 5px 0px #ccc;
+		}
+		.main .m-box1, .m-box3,.m-box2{
+		
+			width: 96%;
+			margin: 0 auto;
+
+		}
+		.main  .m-box1-c{
+			width: 90%;
+			margin: 0 auto;
+		}
+		.main  .m-box1-c .m-l{
+			float: left;
+			font-size:0.4rem;
+			color:#1d1f1e;
+			line-height:2.25rem;
+		}
+		.main .m-box1-c .m-r{
+			float: right;
+		}
+		.main  .m-box1-c .m-r img{
+			width: 1.77rem;
+			height: 1.75rem;
+			border-radius: 50%;
+			border:3px solid rgba(255, 255, 255, 0.3);
+			margin-top:0.27rem;
+			float: left;
+			margin-right: 0.4rem;
+		}
+		.main .m-box1-c .m-r>a{
+			display:block;
+			width: 0.33rem;
+			height: 0.56rem;
+			background:url(images/heijiantou-r_03.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			float: left;
+			margin-top:0.9rem;
+		}
+		.main .m-box1-c .m-r p{
+			font-size:0.3rem;
+			float: left;
+			line-height:1.37rem;
+			margin-right: 0.72rem;
+			color:#8f8f91;
+		}
+		.main .m-box2 {
+			border-top:1px solid #bcc0c3;
+			border-bottom:1px solid #bcc0c3;
+		}
+		.main .m-box2 .m-box1-c .m-l{
+			line-height:1.37rem;
+		}
+		.main .m-box2 .m-box1-c .m-r>a{
+			margin-top:0.4rem;
+		}
+		.main .m-box3 .m-box1-c .m-r p{
+			line-height:1.46rem;
+		}
+		.main .m-box3 .m-box1-c .m-r>a{
+			margin-top:0.5rem;
+		}
+		.main .m-box3 .m-box1-c .m-l{
+			line-height:1.46rem;
+		}
+		#main1  .m-box1-c .m-r img{
+		border-radius:0%;
+		} 
+		#main1 .m-box3 .m-box1-c .m-r p{
+			background: url(images/xinsi_07.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			width: 0.52rem;
+			height: 0.55rem;
+			display:block;
+			margin-top: 0.5rem;
+
+		}
+		.m-box4{
+			width: 100%;
+			background-color: #bdc8ce;
+			color:#869197;
+			font-size:0.25rem;
+			line-height: 0.64rem;
+			padding-left: 0.5rem;
+		}
+		.zhezhao{
+			width: 100%;
+			height: 100%;
+			background-color:rgba(0, 0, 0, 0.42);
+			position:fixed;
+			z-index: 20;
+			top:0;
+			display:none;
+		}
+		.m-r-a-box{
+			width: 100%;
+			border-radius:5px 5px 0px 0px;
+			background-color: #fff;
+			text-align: center;
+			position:absolute;
+			bottom:0;
+			
+		}
+		.m-r-a-box a{
+			display:block;
+			text-decoration: none;
+			color:#232323;
+			font-size:0.3rem;
+			line-height:1rem;
+		}
+		.m-r-a-box .a1{
+			margin-top:0.2rem;
+		}
+		.m-r-a-box p{
+			display:block;
+			font-size: 0.38rem;
+			width: 90%;
+			border-top:1px solid #d92117;
+			margin: 0 auto;
+			line-height: 1.35rem;
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="top clearfix">
+			<a href="personal.html"></a>
+			<div class="logo"></div>
+		</div>
+	</header>
+	<div class="main">
+		<div class="m-box1 ">
+			<div class="m-box1-c clearfix">
+				<div class="m-l ">头像</div>
+				<div class="m-r m-right clearfix">
+					<img src="images/toxiang_17.png" alt="">
+					<a class="m-r-a" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<div class="m-box2 ">
+			<div class="m-box1-c clearfix">
+				<div class="m-l">背景</div>
+				<div class="m-r clearfix">
+					<p>更换</p>
+					<a class="m-r-a" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<div class="m-box3 ">
+			<div class="m-box1-c clearfix">
+				<div class="m-l">名字</div>
+				<div class="m-r clearfix">
+					<p>阴雨天</p>
+					<a class="m-r-a" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main"id="main1">
+		<div class="m-box1" >
+			<div class="m-box1-c clearfix">
+				<div class="m-l">我的二维码</div>
+				<div class="m-r clearfix">
+					<img src="images/erweima_03.png" alt="">
+					<a class="m-r-a" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<div class="m-box2 ">
+			<div class="m-box1-c clearfix">
+				<div class="m-l">我的地址</div>
+				<div class="m-r clearfix">
+					<p>北京市  海淀区</p>
+					<a class="m-r-a" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<div class="m-box3 ">
+			<div class="m-box1-c clearfix">
+				<div class="m-l">隐私</div>
+				<div class="m-r clearfix">
+					<p></p>
+					<a class="m-r-a" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<p class="m-box4">
+			为保护用户隐私，请您尽量选择默认隐私设置
+		</p>
+	</div>
+	<div class="zhezhao">
+		<div class="m-r-a-box">
+			<a class="a1" href="#">进入相册选择</a>
+			<a class="a2" href="#">拍一张</a>
+			<p class="p3" href="#">取消</p>
+		</div>
+	</div>
+	<script src="js/hammer.min.js"></script>
+	<script>
+		var mainright = document.getElementsByClassName('m-right')[0];
+		var zhezhao = document.getElementsByClassName('zhezhao')[0];
+		var hammertime = new Hammer(mainright);
+		hammertime.on("tap",function(){
+			zhezhao.style.display="block";
+		})
+		var p3 = document.getElementsByClassName('p3')[0];
+		var hammertime1 = new Hammer(p3);
+		hammertime1.on("tap",function(){
+			zhezhao.style.display="none";
+		})
+		var hammertime2 = new Hammer(zhezhao);
+		hammertime2.on("tap",function(event){
+			zhezhao.style.display="none";
+		})
+	</script>
+</body>
+</html>

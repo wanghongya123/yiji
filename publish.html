@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px"})()
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<style>
+				.clearfix:before,
+		.clearfix:after {       
+		    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+		    display: block;   /*加入的这个元素转换为块级元素。*/
+		    clear: both;     /*清除左右两边浮动。*/
+		    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+		    line-height: 0;    /*行高为0；*/
+		    height: 0;     /*高度为0；*/
+		    font-size:0;    /*字体大小为0；*/
+		}
+		.clearfix { *zoom:1;}
+		body{
+			font-family:"微软雅黑";
+			overflow:hidden;
+			background:url(images/so-bg.jpg) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
+		header{
+			width: 100%;
+			margin-bottom:0.08rem;
+		}
+		header .top{
+			width: 90%;
+			background-color: #fff;
+			text-align: center;
+			margin: 0 auto;
+			border-bottom:1px solid #666;
+		}
+		header .top .logo{
+				width:87%;
+				height:1.8rem;
+				line-height:1.8rem;
+				float: left;
+				color:#d20003;
+				font-size:0.39rem;
+		}
+		header .top > a{
+				display:block;
+				width: 0.67rem;
+				height: 0.67rem;
+				background:url(images/publish-fj_03.png) no-repeat right;
+				/*background-position: 100% 50%;*/
+				-webkit-background-size:30% 20%;
+				background-size:cover;
+				float: right;
+				margin-right:0.43rem;
+				margin-top: 0.5rem;
+		}
+		.main{
+			width: 100%;
+			text-align: center;
+			padding-top:0.5rem;
+		}
+		textarea{
+			width: 90%;
+			height: 6rem;
+			border:0;
+			outline: 0;
+			background:rgba(1,1,1,0);
+			color:#999;
+
+			
+		}
+		.box-pic{
+			width: 9.71rem;
+			height: 2.8rem;
+			background-color: #e6e6e6;
+			margin: 0 auto;padding-top: 2rem;
+		}
+		.box-pic .box-t{
+			width: 0.71rem;
+			height: 0.58rem;
+			background:url(images/pulish-pic_17.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			margin: 0 auto;
+
+		}
+		.box-pic>a{
+			text-decoration: none;
+			color:#d20003;
+			font-size: 0.21rem;
+		}
+		.box-pic1{
+			width: 0.7em;
+			height: 0.58em;
+			background:url(images/publish-xiangji_03.png) no-repeat;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			margin-left:6%;
+			margin-top:0.35rem;
+			margin-bottom: 0.35rem;
+		}
+		.box-pic2{
+			width: 90%;
+			border-top:1px solid #666;
+			padding-top: 0.44rem;
+			margin: 0 auto;
+		}
+		.box-pic2>a{
+			font-size: 0.3rem;
+			text-decoration: none;
+			color:#414141;
+		}
+		.box-pic2 .left{
+			float: left;
+			background:url(images/search1_07.png) no-repeat;
+			-webkit-background-size:100% 100%;
+			background-size:15% 100%;
+			padding-left:0.52rem;
+			margin-left:6%;
+		}
+		.box-pic2 .right{
+			float: left;
+			background:url(images/pulish-box2_39.png) no-repeat;
+			-webkit-background-size:100% 100%;
+			background-size:20% 100%;
+			padding-left:0.6rem;
+			margin-left:2.23rem ;
+		}
+			footer{
+			
+			position:relative;
+		}
+		.footer-center{
+			width: 100%;
+			height: 1.45rem;
+			background-color: #000;
+			position:fixed;
+			bottom:0;
+		}
+		footer .footer-center a{
+			display:block;
+			float: left;
+			font-size:0.25rem;
+			text-decoration: none;
+			color:#fff;
+			padding:0.05rem 0.945rem;
+			text-align: center;
+		}
+		footer .footer-center a .iconfont{
+			font-size:0.71rem;
+		}
+		footer .footer-center .a1{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="top clearfix">
+			<p class="logo">上传照片</p>
+			<a href="#"></a>
+		</div>
+	</header>
+	<div class="main">
+		<textarea name="" id="" cols="30" rows="10" placeholder="">说点什么...
+		</textarea>
+		<div class="box-pic">
+			<a href="#">
+				<div class="box-t"></div>
+				<p>点击添加图片</p>
+			</a>
+		</div>
+		<div class="box-pic1"></div>
+		<div class="box-pic2 clearfix">
+			<a class="left" href="#">点击获取位置</a>
+			<a class="right" href="#">添加标签</a>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-center">
+			<a  href="home.html"><i class="iconfont icon-xuanzhong"></i><br>展讯</a>
+			<a href="recom.html"><i class="iconfont icon-tuijian"></i><br>推荐</a>
+			<a class="a1" href="publish.html"><i class="iconfont icon-fabu"></i><br>发布</a>
+			<a href="personal.html"><i class="iconfont icon-account"></i><br>个人</a>
+		</div>
+	</footer>
+</body>
+</html>

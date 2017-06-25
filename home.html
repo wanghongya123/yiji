@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px"})()
+	</script>
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<style>
+		.clearfix:before,
+		.clearfix:after {       
+		    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+		    display: block;   /*加入的这个元素转换为块级元素。*/
+		    clear: both;     /*清除左右两边浮动。*/
+		    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+		    line-height: 0;    /*行高为0；*/
+		    height: 0;     /*高度为0；*/
+		    font-size:0;    /*字体大小为0；*/
+		}
+		.clearfix { *zoom:1;}
+		body{
+			font-family:"微软雅黑";
+			overflow:hidden;
+		}
+		header{
+			width: 100%;
+			margin-bottom:0.08rem;
+		}
+		header .top{
+			background-color: #f0f0f2;
+			position: relative;
+			z-index: 10;
+		}
+		header .top .logo{
+				width: 60%;
+				height:1.8rem;
+				background:url(images/home-logo_03.png) no-repeat;
+				background-position: 100% 50%;
+				-webkit-background-size:30% 20%;
+				background-size:30% 20%;
+				float: left;
+		}
+		header .top > a{
+				display:block;
+				width: 0.67rem;
+				height: 0.67rem;
+				background:url(images/home-so_03.png) no-repeat right;
+				/*background-position: 100% 50%;*/
+				-webkit-background-size:30% 20%;
+				background-size:cover;
+				float: right;
+				margin-right:0.43rem;
+				margin-top: 0.5rem;
+		}
+		header .banner{
+			transition:all 1s;
+
+		}
+		.banner-animate{
+			transform:translate(0,-5.48rem);
+		
+		}
+		
+		header .banner .swiper-container{
+			width: 100%;
+			height:5.47rem;
+
+		}
+		header .banner  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+			font-size:0rem;
+		}
+		header .banner  .swiper-pagination-bullet{
+			width: 5px;
+			height: 5px;
+			background:#fff;
+			opacity:1;
+		}
+		header .banner  .swiper-pagination-bullet-active{
+			background:red;
+		}
+		
+		header .banner .swiper-container .box1{
+			width: 100%;
+			height: 100%;
+		}
+		header .banner .swiper-container img{
+			width: 100%;
+		}
+		.main .main-top{
+			width: 100%;
+			height: 2.98rem;
+			overflow:hidden;
+			transition:all 1s;
+		}
+		.main .main-top .main-t-box{
+			width:54.44rem;
+			transition:all 1s;
+		}
+		.main .main-top .main-t-box > div{
+			float: left;
+			width: 4.46rem;
+			height: 2.79rem;
+			margin-right:0.06rem;
+		}
+		.main .main-top .main-t-box  img{
+			width: 4.46rem;
+			height: 2.79rem;
+		}
+		.main .main-mid{
+			width: 10.8rem;
+			overflow:hidden;
+			transition:all 1s;
+		}
+		.main .main-new-mid{
+			transform:translate(0,-5.48rem);
+			height:100%;
+		}
+		.main .main-mid .main-mid-center-box{
+			width:21.60rem;
+			height: 27.62rem;
+
+		}
+		.main .main-mid .main-mid-c-b-t{
+			height: 28.49rem;
+			width: 10.8rem;
+			float: left;
+			transition:all 1s;
+		}
+		.main .main-mid .main-mid-center{
+			height: 27.62rem;
+			width: 10.8rem;
+			transition:all 1s;
+		}
+		.main .main-mid .main-m-top {
+			height: 0.7rem;
+			width: 100%;
+			position:absolute;
+		}
+		.main .main-mid .main-mid-c-b-t1 > .main-m-top {
+			background:url(images/u124.jpg) no-repeat center;
+			-webkit-background-size:100%;
+			background-size:100%;
+		}
+		.main .main-mid .main-mid-c-b-t2 > .main-m-top {
+			background:url(images/u127.jpg) no-repeat center;
+				-webkit-background-size:100%;
+			background-size:100%;
+		}
+		.main .main-mid .main-m-top p{
+			display:block;
+			width: 50%;
+			height: 0.87rem;
+			float: left;
+		}
+		.main .main-mid .main-m-pic{
+			width: 100%;
+			height: 5.41rem;
+			margin-top:0.2rem;
+		}
+		
+		.main .main-mid .main-m-pic img{
+			width: 100%;
+		}
+		.main .main-mid .main-m-pic:nth-child(1){
+			margin-top:1rem;
+		}
+		footer{
+			
+			position:relative;
+		}
+		.footer-center{
+			width: 100%;
+			height: 1.45rem;
+			background-color: #000;
+			position:fixed;
+			bottom:0;
+		}
+		footer .footer-center a{
+			display:block;
+			float: left;
+			font-size:0.25rem;
+			text-decoration: none;
+			color:#fff;
+			padding:0.05rem 0.945rem;
+			text-align: center;
+		}
+		footer .footer-center a .iconfont{
+			font-size:0.71rem;
+		}
+		footer .footer-center .a1{
+			color:red;
+		}
+		
+		/*footer .footer-center a:hover {
+			color:red;
+		}
+		footer .footer-center a:hover .iconfont{
+			color:red;
+		}*/
+	</style>
+</head>
+<body>
+	<header>
+		<div class="top clearfix">
+			<div class="logo"></div>
+			<a href="search.html"></a>
+		</div>
+		<div class="banner">
+			<div class="swiper-container banner-sc">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide box1"><img src="images/u62.jpg" alt=""></div>
+					<div class="swiper-slide box2">
+						<img src="images/u65.jpg" alt="">
+					</div>
+					<div class="swiper-slide box3">
+						<img src="images/u68.jpg" alt="">
+					</div>
+	    		</div>
+	    		 <!-- 如果需要分页器 -->
+	    		<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<div class="main-top">
+			<div class="main-t-box clearfix">
+					<div class="main-t-box1"><a href="huihua.html"><img src="images/u97_01.jpg" alt=""></a></div>
+					<div class="main-t-box2"><a href="shuimo.html"><img src="images/u98_02.jpg" alt=""></a></div>
+					<div class="main-t-box3"><a href="sheji.html"><img src="images/u99_02.jpg" alt=""></a></div>
+					<div class="main-t-box4"><a href="sheying.html"><img src="images/u100_02.jpg" alt=""></a></div>
+					<div class="main-t-box5"><a href="diaosu.html"><img src="images/u101_02.jpg" alt=""></a></div>
+					<div class="main-t-box6"><a href="zhuangzhi.html"><img src="images/u102_02.jpg" alt=""></a></div>
+					<div class="main-t-box1"><a href="huihua.html"><img src="images/u97_01.jpg" alt=""></a></div>
+					<div class="main-t-box2"><a href="shuimo.html"><img src="images/u98_02.jpg" alt=""></a></div>
+					<div class="main-t-box3"><a href="sheji.html"><img src="images/u99_02.jpg" alt=""></a></div>
+					<div class="main-t-box4"><a href="sheying.html"><img src="images/u100_02.jpg" alt=""></a></div>
+					<div class="main-t-box5"><a href="diaosu.html"><img src="images/u101_02.jpg" alt=""></a></div>
+					<div class="main-t-box6"><a href="zhuangzhi.html"><img src="images/u102_02.jpg" alt=""></a></div>
+			</div>
+		</div>
+		<div class="main-mid clearfix">
+			<div class="main-mid-center-box clearfix">
+				<div class="main-mid-c-b-t main-mid-c-b-t1  ">
+					<div class="main-m-top ">
+							<p class ="" href="left"></p>
+							<p class ="right" href="right"></p>
+					</div>
+					<div class="main-mid-center main-m-box1">
+						<div class="main-m-pic"><a href="home-box1.html"><img src="images/main-m_01.jpg" alt=""></a></div>
+						<div class="main-m-pic"><a href="home-box2.html"><img src="images/main-m-2_02.jpg" alt=""></a></div>
+						<div class="main-m-pic"><a href="home-box3.html"><img src="images/main-m-3_02.jpg" alt=""></a></div>
+						<div class="main-m-pic"><a href="home-box4.html"><img src="images/main-m-4_02.jpg" alt=""></a></div>
+						<div class="main-m-pic"><a href="home-box5.html"><img src="images/main-m-5_02.jpg" alt=""></a></div>
+					</div>
+				</div>
+				<div class=" main-mid-c-b-t main-mid-c-b-t2">
+					<div class="main-m-top ">
+							<p class="left"href="left"></p>
+							<p class="right"href="right"></p>
+					</div>
+					<div class="main-mid-center main-m-box2">
+						
+						<div class="main-m-pic"><img src="images/main-m-6_01.jpg" alt=""></div>
+						<div class="main-m-pic"><img src="images/main-m-7_02.jpg" alt=""></div>
+						<div class="main-m-pic"><img src="images/main-m-8_02.jpg" alt=""></div>
+						<div class="main-m-pic"><img src="images/main-m-9_02.jpg" alt=""></div>
+						<div class="main-m-pic"><img src="images/main-m-10_02.jpg" alt=""></div>
+						<div class="main-m-pic"><img src="images/main-m-11_02.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-center">
+			<a class="a1" href="home.html"><i class="iconfont icon-xuanzhong"></i><br>展讯</a>
+			<a href="recom.html"><i class="iconfont icon-tuijian"></i><br>推荐</a>
+			<a href="publish.html"><i class="iconfont icon-fabu"></i><br>发布</a>
+			<a href="personal.html"><i class="iconfont icon-account"></i><br>个人</a>
+		</div>
+	</footer>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script src="js/hammer.min.js"></script>
+    <script>
+    //-------------------header 滑动------------------
+    	var mySwiper = new Swiper ('.banner-sc', {
+		    direction: 'horizontal',//vertical纵向 horizontal水平
+		    loop: true,
+		    pagination: '.swiper-pagination',
+		    //------------------自动轮播----------------
+		    autoplay : 5000,//时间
+			autoplayDisableOnInteraction : false,//循环
+  		})
+    //-------------------.main-top 滑动------------
+
+    var box = document.getElementsByClassName('main-t-box')[0];
+  		var hammertime = new Hammer(box);
+  		var i = 0;
+  		hammertime.on("swipeleft",function(){
+	  			
+	  		if(i<19){
+	  			i++;
+				box.style.marginLeft = -227 *i /100 +"rem";
+	  			}	
+			})
+		hammertime.on("swiperight",function(){
+  			if(i>0){
+  				i--;
+				box.style.marginLeft = -227 *i /100 +"rem";
+  			}
+		})
+		//-----------------------点即将展出 换屏------------
+			var right = document.getElementsByClassName('right')[0];
+			var left = document.getElementsByClassName('left')[0];
+			var mainbox  = document.getElementsByClassName('main-mid-center-box')[0];
+			var mainmtop =document.getElementsByClassName('main-m-top')[0];
+			right.onclick = function(event){
+				event.preventDefault();
+				mainbox.style.marginLeft = "-10.8rem";	
+				mainmtop.style.marginLeft = "-10.8rem";
+			} 
+			left.onclick = function(event){
+				event.preventDefault();
+				mainbox.style.marginLeft = "0rem";
+				mainmtop.style.marginLeft = "0rem";	
+			}
+		//-----------------------banner .main-top .main-mid 上滑----------
+		var mainmid = document.getElementsByClassName('main-mid')[0];
+		var maintop = document.getElementsByClassName('main-top')[0];
+		var banner = document.getElementsByClassName('banner')[0];
+		var mainmbox1 = document.getElementsByClassName('main-m-box1')[0];
+		var mainmbox2 = document.getElementsByClassName('main-m-box2')[0];
+		var harmmertime1 = new Hammer(mainmid);	
+		harmmertime1.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+		var j = 0;
+		harmmertime1.on("swipeup",function(){
+	  		var cla = banner.getAttribute("class");
+	  		var cla2 = maintop.getAttribute("class");
+			var cla1 = mainmid.getAttribute("class");
+
+	  		if(cla.indexOf(" banner-animate") === -1 && cla1.indexOf(" banner-animate") === -1 && cla2.indexOf(" banner-animate") === -1){
+				banner.setAttribute("class",cla + " banner-animate");
+				maintop.setAttribute("class",cla2 + " banner-animate")
+	  			mainmid.setAttribute("class",cla1 + " main-new-mid")
+	  		}else{
+	  			//-----------------------t1--------------------------
+	  			if(i<3){
+	  				i++;
+					mainmbox1.style.marginTop = -534 *i /100 +"rem";
+	  			}
+	  			//---------------------t2-----------
+	  			if(j<4){
+	  				j++;
+	  				console.log(j)
+					mainmbox2.style.marginTop = -534 *j /100 +"rem";
+
+	  			}
+	  		}
+		})
+		//---------------------banner .main-top .main-mid 下滑-----------
+		harmmertime1.on("swipedown",function(){
+	  		var cla = banner.getAttribute("class");
+	  		var cla2 = maintop.getAttribute("class");
+			var cla1 = mainmid.getAttribute("class");
+			//---------------------t1------------
+	  		if(i>0 ){
+  				i--;
+				 mainmbox1.style.marginTop = -534 *i /100 +"rem";
+				 mainmbox2.style.marginTop = -534 *i /100 +"rem";
+  			}else{
+  				cla = cla.replace(" banner-animate"," ");
+		  		cla2 = cla2.replace(" banner-animate"," ")
+				cla1 = cla1.replace(" main-new-mid"," ")
+		  		banner.setAttribute("class",cla);
+		  		maintop.setAttribute("class",cla2);
+		  		mainmid.setAttribute("class",cla1);
+  			}
+  			//----------------------t2-------------
+  			if(j>0 ){
+  				j--;
+				 
+				 mainmbox2.style.marginTop = -534 *j /100 +"rem";
+  			}else{
+  				cla = cla.replace(" banner-animate"," ");
+		  		cla2 = cla2.replace(" banner-animate"," ")
+				cla1 = cla1.replace(" main-new-mid"," ")
+		  		banner.setAttribute("class",cla);
+		  		maintop.setAttribute("class",cla2);
+		  		mainmid.setAttribute("class",cla1);
+  			}
+
+		});	
+    </script>
+</body>
+</html>

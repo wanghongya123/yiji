@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>雕塑</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px"})()
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<style>
+	.clearfix:before,
+		.clearfix:after {       
+		    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+		    display: block;   /*加入的这个元素转换为块级元素。*/
+		    clear: both;     /*清除左右两边浮动。*/
+		    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+		    line-height: 0;    /*行高为0；*/
+		    height: 0;     /*高度为0；*/
+		    font-size:0;    /*字体大小为0；*/
+		}
+		.clearfix { *zoom:1;}
+		body{
+			background:url(images/diaosu.jpg) no-repeat;
+				-webkit-background-size: 100%;
+			-o-background-size: 100%;
+			-moz-background-size: 100%;
+			-ms-background-size: 100%;
+			background-size: 100%;
+		}
+		header{
+			width: 100%;
+		}
+		header .top{
+			width: 100%;
+		
+			height:1.8rem;
+			position: fixed;
+			top:0;
+		}
+		.left{
+			display:block;
+			width: 0.45rem;
+			height: 0.45rem;
+			background:url(images/home-so_03.png) no-repeat;
+			-webkit-background-size: 100%;
+			-o-background-size: 100%;
+			-moz-background-size: 100%;
+			-ms-background-size: 100%;
+			background-size: 100%;
+			float: left;
+			margin-left:0.7rem;
+			margin-top:0.89rem;
+		}
+		.right{
+			display:block;
+			width: 0.26rem;
+			height: 0.26rem;
+			background:url(images/u155_06.png) no-repeat;
+			-webkit-background-size: 100%;
+			-o-background-size: 100%;
+			-moz-background-size: 100%;
+			-ms-background-size: 100%;
+			background-size: 100%;
+			float: right;
+			margin-right:0.7rem;
+			margin-top:1rem;
+		}
+		.main{
+			margin-top:1.8rem;
+			margin-bottom:1.8rem;
+
+		}
+		.main-center{
+			transition:all 1s;
+		}
+		.main-center img{
+			width: 10.8rem;
+			height: 5.41rem;
+			margin-top:0.23rem;
+		}
+		footer{
+			
+			position:relative;
+		}
+		.footer-center{
+			width: 100%;
+			height: 1.45rem;
+			background-color: #000;
+			position:fixed;
+			z-index: 10;
+			bottom:0;
+		}
+		footer .footer-center a{
+			display:block;
+			float: left;
+			font-size:0.25rem;
+			text-decoration: none;
+			color:#fff;
+			padding:0.05rem 0.945rem;
+			text-align: center;
+		}
+	
+		footer .footer-center a .iconfont{
+			font-size:0.71rem;
+		}
+		footer .footer-center .a1{
+			color:red;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="top clearfix">
+			<a href="search.html" class="left"></a>
+			<a href="home.html" class="right"></a>
+		</div>
+	</header>
+	<div class="main">
+		<div class="main-center">
+			<img src="images/main-m-5_02.jpg" alt="">
+			<img src="images/u68.jpg" alt="">
+		</div>
+	</div>
+	<footer>
+		<div class="footer-center">
+			<a class="a1" href="home.html"><i class="iconfont icon-xuanzhong"></i><br>展讯</a>
+			<a  href="recom.html"><i class="iconfont icon-tuijian"></i><br>推荐</a>
+			<a href="#"><i class="iconfont icon-fabu"></i><br>发布</a>
+			<a href="#"><i class="iconfont icon-account"></i><br>个人</a>
+		</div>
+	</footer>
+</body>
+</html>

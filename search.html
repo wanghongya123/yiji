@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px"})()
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+	body{
+		font-family:"微软雅黑";
+		text-align: center;
+		background:url(images/so-bg.jpg) no-repeat;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+	}
+	input{
+		width: 70%;
+		height: 1rem;
+		border:0;
+		border-bottom:1px solid #555555;
+		outline:0;
+		padding-left:0.9rem;
+		padding-right:1rem;
+	}
+	h1{
+		font-size:0.36rem;
+		margin-top:1.27rem;
+	}
+	p{
+		font-size:0.36rem;
+		color:#555555;
+		line-height: 1rem;
+	}
+	.box1,.box2,.box3{
+		margin-top:0.6rem;
+	}
+	.box-t{position:relative;}
+	.left{
+		background:url(images/home-so_03.png) no-repeat;
+		-webkit-background-size: 100%;
+		-o-background-size: 100%;
+		-moz-background-size: 100%;
+		-ms-background-size: 100%;
+		background-size: 100%;
+		display:block;
+		width: 0.45rem;
+		height: 0.45rem;
+		position:absolute;
+		top:0.7rem;
+		left:0.9rem;
+	}
+	.right{
+		background:url(images/u155_06.png) no-repeat;
+		-webkit-background-size: 100%;
+		-o-background-size: 100%;
+		-moz-background-size: 100%;
+		-ms-background-size: 100%;
+		background-size: 100%;
+		display:block;
+		width: 0.45rem;
+		height: 0.45rem;
+		position:absolute;
+		top:0.7rem;
+		right:0.9rem;
+	}
+	p>a{
+		text-decoration: none;
+		color:#555555;
+		padding-right:0.22rem;
+
+	}
+	.s1{
+		display:inline-block;
+		width: 0.29rem;
+		height: 0.49rem;
+		background:url(images/search1_07.png) no-repeat;
+		-webkit-background-size: 100%;
+		-o-background-size: 100%;
+		-moz-background-size: 100%;
+		-ms-background-size: 100%;
+		background-size: 100%;
+		margin-top:0.35rem;
+		margin-right:0.35rem;
+
+	}
+	.s2{
+		display:inline-block;
+		width: 0.29rem;
+		height: 0.49rem;
+		background:url(images/seatack_11.png )no-repeat;
+		-webkit-background-size: 100%;
+		-o-background-size: 100%;
+		-moz-background-size: 100%;
+		-ms-background-size: 100%;
+		background-size: 100%;
+		margin-top:0.35rem;
+		margin-right:0.35rem;
+		
+	}
+	.s3{
+		display:inline-block;
+		width: 0.29rem;
+		height: 0.49rem;
+		background:url(images/ren_07.png) no-repeat;
+		-webkit-background-size: 100%;
+		-o-background-size: 100%;
+		-moz-background-size: 100%;
+		-ms-background-size: 100%;
+		background-size: 100%;
+		margin-top:0.35rem;
+		margin-right:0.35rem;
+		
+	}
+	.box-mid{
+		width: 70%;
+		height: 3.74rem;
+		margin: 0 auto;
+		padding-top: 1.45rem;
+		background-color: #fff;
+		display:none;
+
+	}
+
+	.pic{
+		width: 0.89rem;
+		height: 0.87rem;
+		background:url(images/kulian_06.png) no-repeat;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+		margin: 0 auto;
+	}
+	.box-mid>p{
+		line-height:1.48rem;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="box-top">
+		<input type="text" placeholder="search">
+		<a class="left" href="#"></a>
+		<a class="right" href="home.html"></a>
+		<div class="box-mid">
+			<div class="pic"></div>
+			<p>抱歉，没有找到相关信息...</p>
+		</div>
+	</div>
+	<h1>-热门搜索词-</h1>
+	<div class="box">
+		<div class="box1">
+			<p class="p1"><span class="s1"></span><a href="#">北京</a> <a href="#">沈阳</a>  <a href="#">上海</a></p>
+			<p class="p2"><a href="#">798</a><a href="#">北京空间画廊</a>   <a href="#">尤伦斯当代艺术中心</a></p>
+			<p class="p3"><a href="#">今日美术馆</a>  <a href="#">时代美术馆</a>  <a href="#">宋庄</a></p>
+		</div>
+		<div class="box2">
+			<p class="p4"><span class="s2"></span><a href="#">曾梵志 </a> <a href="#">向京</a>  <a href="#">安东尼-个穆雷</a> </p>
+			<p class="p5"><a href="#">小姑元稹</a>  <a href="#">小圈</a></p>
+		</div>
+		<div class="box3">
+			<p class="p6"><span class="s3"></span><a href="#">对话：列奥纳多.达芬奇</a></p>
+			<p class="p7"><a href="#">梵高和高更：理想和显示</a></p>
+			<p class="p8"><a href="#">2016北京艺术双年展</a></p>
+		</div>
+	</div>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script src="js/hammer.min.js"></script>
+	<script>
+		var box = document.getElementsByClassName('box')[0];
+		var a =box.getElementsByTagName('a');
+		var input = document.getElementsByTagName('input')[0];
+		for(var i = 0 ;i<a.length;i++){
+			(function(){
+				var a1 = a[i]
+				var hammertime =  new Hammer(a1);
+				hammertime.on("tap",function(){
+				var txt = a1.innerHTML;
+				console.log(txt)
+				input.value= txt;
+				console.log()
+				});
+			})(i)	
+		}
+		var boxtop = document.getElementsByClassName('box-top')[0];
+		var left = boxtop.getElementsByClassName('left')[0];
+		var boxmid = boxtop.getElementsByClassName('box-mid')[0];
+		var hammertime1 = new Hammer(left);
+		hammertime1.on("tap" , function(){
+			boxmid.style.display="block";
+		})
+		
+	</script>
+</body>
+</html>
